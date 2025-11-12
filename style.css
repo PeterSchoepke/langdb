@@ -9,7 +9,7 @@
 
 #subtitles {
     margin-top: 1rem;
-    height: calc(75vh - 6rem);
+    height: calc(75vh - 7rem);
     overflow-y: auto;
 }
 
