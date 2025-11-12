@@ -36,6 +36,7 @@ function pause() {
 let cues = [];
 loadFile(videocode+'.vtt', (fileContent) => {
     cues = cues = parseVTT(fileContent);
+    addSubtitlesToUI(cues);
 });
 
 setInterval(()=>{
@@ -49,3 +50,4 @@ setInterval(()=>{
     }
     document.querySelector('#currentSubtitle').textContent = text;
 }, 1);
+

@@ -4,4 +4,20 @@
 
 #buttons {
     text-align: center;
+    margin: 1rem 0;
+}
+
+#subtitles {
+    margin-top: 1rem;
+    height: calc(75vh - 6rem);
+    overflow-y: auto;
+}
+
+#subtitles > div {
+    margin: 0 1rem 1rem;
+    text-decoration: underline 8px solid transparent;
+}
+
+#subtitles > div.current {
+    text-decoration: underline 8px solid black;
 }

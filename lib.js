@@ -68,3 +68,15 @@ function parseVTT(vttContent) {
     console.log("Parsed Cues:", cues);
     return cues;
 }
+
+function addSubtitlesToUI(cues){
+    const subtitlesArea = document.querySelector('#subtitles');
+
+    for(let i = 0; i < cues.length; ++i) {
+        const cue = cues[i];
+        let div = document.createElement('div');
+        div.textContent = cue.text;
+
+        subtitlesArea.appendChild(div);
+    }
+}
