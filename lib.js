@@ -80,3 +80,16 @@ function addSubtitlesToUI(cues){
         subtitlesArea.appendChild(div);
     }
 }
+
+// Set the CSS variable for the viewport height
+function setViewportHeight() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+// Set it initially
+setViewportHeight();
+
+// Recalculate on resize (for screen rotation or keyboard appearance/disappearance)
+window.addEventListener('resize', setViewportHeight);
+window.addEventListener('orientationchange', setViewportHeight);
