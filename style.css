@@ -3,13 +3,22 @@
 }
 
 #buttons {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
     text-align: center;
-    margin: 1rem 0;
+    margin: 0 0 1rem 0;
 }
 
 #subtitles {
-    margin-top: 1rem;
-    height: calc(75vh - 7rem);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 27vh;
+    bottom: 10vh;
+    
     overflow-y: auto;
 }
 
